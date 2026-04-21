@@ -56,20 +56,20 @@ csharp_style_namespace_declarations = file_scoped
 ### IDE* rule toggles ###
 #########################
 
-# Disable: Add accessibility modifiers
-dotnet_diagnostic.IDE0040.severity = none
+# Add accessibility modifiers
+dotnet_diagnostic.IDE0040.severity = suggestion
 
-# Disable: Convert to conditional expression
-dotnet_diagnostic.IDE0045.severity = none
+# Convert to conditional expression
+dotnet_diagnostic.IDE0045.severity = suggestion
 
-# Disable: Remove unused private member
-dotnet_diagnostic.IDE0051.severity = none
+# Remove unused private member
+dotnet_diagnostic.IDE0051.severity = suggestion
 
-# Disable: Null check can be simplified (if null check)
-dotnet_diagnostic.IDE0270.severity = none
+# Null check can be simplified (if null check)
+dotnet_diagnostic.IDE0270.severity = suggestion
 
-# Disable: Use collection expression for fluent
-dotnet_diagnostic.IDE0305.severity = none
+# Use collection expression for fluent
+dotnet_diagnostic.IDE0305.severity = suggestion
 
 # Remove unnecessary cast
 dotnet_diagnostic.IDE0004.severity = suggestion
@@ -97,16 +97,16 @@ dotnet_diagnostic.IDE0059.severity = suggestion
 ########################################
 
 # Do not expose generic lists
-dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA1002.severity = suggestion
 
 # Specify IFormatProvider
-dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1305.severity = suggestion
 
 # Avoid unused private fields
 dotnet_diagnostic.CA1823.severity = suggestion
 
 # Do not use insecure randomness
-dotnet_diagnostic.CA5394.severity = none
+dotnet_diagnostic.CA5394.severity = suggestion
 
 ###################################################
 ### CS* (C Sharp compiler warning) rule toggles ###
