@@ -55,14 +55,8 @@ csharp_style_namespace_declarations = file_scoped
 ### IDE* rule toggles ###
 #########################
 
-# Add accessibility modifiers
-dotnet_diagnostic.IDE0040.severity = suggestion
-
-# Use conditional expression for assignment
-dotnet_diagnostic.IDE0045.severity = suggestion
-
-# Remove unused private member
-dotnet_diagnostic.IDE0051.severity = suggestion
+# Remove unnecessary cast
+dotnet_diagnostic.IDE0004.severity = suggestion
 
 # Null check can be simplified (ternary conditional check)
 dotnet_diagnostic.IDE0029.severity = suggestion
@@ -70,14 +64,11 @@ dotnet_diagnostic.IDE0029.severity = suggestion
 # Null check can be simplified (nullable ternary conditional check)
 dotnet_diagnostic.IDE0030.severity = suggestion
 
-# Null check can be simplified (if null check)
-dotnet_diagnostic.IDE0270.severity = suggestion
+# Add accessibility modifiers
+dotnet_diagnostic.IDE0040.severity = suggestion
 
-# Use collection expression for fluent
-dotnet_diagnostic.IDE0305.severity = suggestion
-
-# Remove unnecessary cast
-dotnet_diagnostic.IDE0004.severity = suggestion
+# Use conditional expression for assignment
+dotnet_diagnostic.IDE0045.severity = suggestion
 
 # Add readonly modifier
 dotnet_diagnostic.IDE0044.severity = suggestion
@@ -91,11 +82,20 @@ dotnet_diagnostic.IDE0047.severity = suggestion
 # Add parentheses for clarity
 dotnet_diagnostic.IDE0048.severity = suggestion
 
+# Remove unused private member
+dotnet_diagnostic.IDE0051.severity = suggestion
+
 # Remove unread private member
 dotnet_diagnostic.IDE0052.severity = suggestion
 
 # Remove unnecessary value assignment
 dotnet_diagnostic.IDE0059.severity = suggestion
+
+# Null check can be simplified (if null check)
+dotnet_diagnostic.IDE0270.severity = suggestion
+
+# Use collection expression for fluent
+dotnet_diagnostic.IDE0305.severity = suggestion
 
 ########################################
 ### CA* (code analysis) rule toggles ###
