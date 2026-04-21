@@ -52,40 +52,71 @@ dotnet_style_namespace_match_folder = false
 # IDE0160, IDE0161: Namespace declaration preferences
 csharp_style_namespace_declarations = file_scoped
 
+#########################
+### IDE* rule toggles ###
+#########################
+
 # Disable: Add accessibility modifiers
 dotnet_diagnostic.IDE0040.severity = none
-
-# Disable: Null check can be simplified (if null check)
-dotnet_diagnostic.IDE0270.severity = none
-
-# Disable: Remove unused private member
-dotnet_diagnostic.IDE0051.severity = none
 
 # Disable: Convert to conditional expression
 dotnet_diagnostic.IDE0045.severity = none
 
-# Disable: Do not expose generic lists
-dotnet_diagnostic.CA1002.severity = none
+# Disable: Remove unused private member
+dotnet_diagnostic.IDE0051.severity = none
 
-# Disable: Do not use insecure randomness
-dotnet_diagnostic.CA5394.severity = none
-
-# Disable: Specify IFormatProvider
-dotnet_diagnostic.CA1305.severity = none
+# Disable: Null check can be simplified (if null check)
+dotnet_diagnostic.IDE0270.severity = none
 
 # Disable: Use collection expression for fluent
 dotnet_diagnostic.IDE0305.severity = none
 
+# Remove unnecessary cast
 dotnet_diagnostic.IDE0004.severity = suggestion
+
+# Add readonly modifier
 dotnet_diagnostic.IDE0044.severity = suggestion
+
+# Use conditional expression for return
 dotnet_diagnostic.IDE0046.severity = suggestion
+
+# Remove unnecessary parentheses
 dotnet_diagnostic.IDE0047.severity = suggestion
+
+# Add parentheses for clarity
 dotnet_diagnostic.IDE0048.severity = suggestion
+
+# Remove unread private member
 dotnet_diagnostic.IDE0052.severity = suggestion
+
+# Remove unnecessary value assignment
 dotnet_diagnostic.IDE0059.severity = suggestion
 
+########################################
+### CA* (code analysis) rule toggles ###
+########################################
+
+# Do not expose generic lists
+dotnet_diagnostic.CA1002.severity = none
+
+# Specify IFormatProvider
+dotnet_diagnostic.CA1305.severity = none
+
+# Avoid unused private fields
 dotnet_diagnostic.CA1823.severity = suggestion
 
+# Do not use insecure randomness
+dotnet_diagnostic.CA5394.severity = none
+
+###################################################
+### CS* (C Sharp compiler warning) rule toggles ###
+###################################################
+
+# The variable 'variable' is assigned but its value is never used
 dotnet_diagnostic.CS0219.severity = suggestion
+
+# Field 'field' is never assigned to, and will always have its default value 'value'
 dotnet_diagnostic.CS0649.severity = suggestion
+
+# Missing XML comment for publicly visible type or member 'Type_or_Member'
 dotnet_diagnostic.CS1591.severity = none
