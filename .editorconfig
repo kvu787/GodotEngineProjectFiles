@@ -1,5 +1,6 @@
 root = true
 
+# This section should be the same for all projects.
 [*]
 
 charset = utf-8
@@ -7,6 +8,7 @@ end_of_line = crlf
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+# This section should be the same for all projects.
 [*.json]
 
 indent_style = space
@@ -17,6 +19,7 @@ indent_size = 4
 indent_style = space
 indent_size = 4
 
+# This section should be the same for all Godot and Unity projects.
 [*.cs]
 
 # Indents
@@ -65,13 +68,13 @@ dotnet_diagnostic.IDE0029.severity = suggestion
 dotnet_diagnostic.IDE0030.severity = suggestion
 
 # Add accessibility modifiers
-dotnet_diagnostic.IDE0040.severity = suggestion
-
-# Use conditional expression for assignment
-dotnet_diagnostic.IDE0045.severity = suggestion
+dotnet_diagnostic.IDE0040.severity = none
 
 # Add readonly modifier
 dotnet_diagnostic.IDE0044.severity = suggestion
+
+# Use conditional expression for assignment
+dotnet_diagnostic.IDE0045.severity = none
 
 # Use conditional expression for return
 dotnet_diagnostic.IDE0046.severity = suggestion
