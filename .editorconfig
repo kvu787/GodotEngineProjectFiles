@@ -45,6 +45,11 @@ csharp_new_line_before_members_in_object_initializers = false
 csharp_new_line_before_members_in_anonymous_types = false
 csharp_new_line_between_query_expression_clauses = false
 
+# IDE0055: C# formatting options, Indentation options
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = false
+csharp_indent_case_contents_when_block = false
+
 # IDE0055: C# formatting options, Using directive options
 dotnet_sort_system_directives_first = false
 
@@ -93,6 +98,12 @@ dotnet_diagnostic.IDE0052.severity = suggestion
 
 # Remove unnecessary value assignment
 dotnet_diagnostic.IDE0059.severity = suggestion
+
+# Use simple 'using' statement
+dotnet_diagnostic.IDE0063.severity = none
+
+# Use pattern matching
+dotnet_diagnostic.IDE0078.severity = none
 
 # Null check can be simplified (if null check)
 dotnet_diagnostic.IDE0270.severity = suggestion
